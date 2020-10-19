@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Cookies from 'js-cookie'
 import { useState, useEffect } from 'react'
+import Link from 'next/link'
 
 const isBrowser = () => typeof window !== "undefined"
 
@@ -44,7 +45,8 @@ export default function Home() {
       Name: {name}<br />
       Window Session Test: {wst}<br />
       <button onClick={setCookie}>Set Cookie</button><br />
-      <button onClick={unSetCookie}>Unset Cookie</button>
+      <button onClick={unSetCookie}>Unset Cookie</button><br />
+      <Link href="/test">Back to Home</Link>
     </div>
   )
 }
