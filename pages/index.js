@@ -24,7 +24,7 @@ export default function Home() {
   }
 
   const unSetCookie = () => {
-    Cookies.remove('name')
+    Cookies.remove('name', {sameSite: 'None', secure: true})
     window.sessionStorage.removeItem("windowSessionTest");
 
     updateName()
