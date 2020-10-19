@@ -46,7 +46,7 @@ export default function Home() {
       Window Session Test: {wst}<br />
       <button onClick={setCookie}>Set Cookie</button><br />
       <button onClick={unSetCookie}>Unset Cookie</button><br />
-      <Link href="/test">Back to Home</Link>
+      <Link href="/test">Go to Custom Page</Link>
     </div>
   )
 }
