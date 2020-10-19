@@ -47,6 +47,7 @@ export default function Home() {
       <button onClick={setCookie}>Set Cookie</button><br />
       <button onClick={unSetCookie}>Unset Cookie</button><br />
       <Link href="/test">Go to Custom Page</Link>
+      <Link href="/page-test">Go to Page Test</Link>
     </div>
   )
 }
