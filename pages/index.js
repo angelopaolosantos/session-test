@@ -17,7 +17,7 @@ export default function Home() {
   }, [])
 
   const setCookie = () => {
-    Cookies.set('name', 'John Doe')
+    Cookies.set('name', 'John Doe', {sameSite: 'None', secure: true})
     window.sessionStorage.setItem("windowSessionTest", "123")
 
     updateName()
